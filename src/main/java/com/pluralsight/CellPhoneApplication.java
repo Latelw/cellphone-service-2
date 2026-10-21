@@ -11,7 +11,8 @@ public class CellPhoneApplication {
         System.out.println("===Phone===");
 
         System.out.print("What is the serial number? ");
-        phone.setSerialNumber(Integer.parseInt(scanner.nextLine()));
+        phone.setSerialNumber(scanner.nextInt());
+        scanner.nextLine();
 
         System.out.print("What model is the phone? ");
         phone.setModel(scanner.nextLine());
