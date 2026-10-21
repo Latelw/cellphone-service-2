@@ -69,7 +69,16 @@ public class CellPhoneApplication {
         System.out.println("===Show Display== \n");
 
         display(phone);
+        System.out.println("\n");
         display(phone1);
+        //Make the phones call each other
+        System.out.println("===Calling===");
+        phone.dial(phone1.getPhoneNumber());
+        System.out.println("\n");
+        phone1.dial(phone.getPhoneNumber());
+
+
+
 
 
 
